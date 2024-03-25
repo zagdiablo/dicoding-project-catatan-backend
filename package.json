@@ -4,15 +4,23 @@
   "description": "A back-end API project to handle CRUD for Note keeping made using Hapi for the purpose of finishing \"Belajar Membuat Aplikasi Back-End untuk Pemula\" course.",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^21.3.7"
+    "@hapi/hapi": "^21.3.7",
+    "nanoid": "^3.3.7"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^3.1.0"
   }
 }
