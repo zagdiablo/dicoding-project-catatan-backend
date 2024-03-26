@@ -42,30 +42,32 @@ Start the server
 ```http
   GET /notes/{id}
 ```
+
 #### Delete note by id
 
 ```http
   DELETE /notes/{id}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of note to fetch |
-
 #### Add new note
 
 ```http
   POST /notes?title=<title>&tags=<tags>&body=<body>
 ```
-#### Update new note
+
+#### Update new note by id
 
 ```http
-  PUT /notes?title=<title>&tags=<tags>&body=<body>
+  PUT /notes/{id}?title=<title>&tags=<tags>&body=<body>
 ```
+
+| Path Params | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of note to fetch |
 
 | Query Params | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `title`      | `string` | **Required**. Title of note to add |
+| `title`      | `string` | **Required**. Title of note to add or update |
 | `tags`      | `string` | Note tags |
 | `body`      | `string` | Content of the note |
 
