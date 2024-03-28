@@ -4,6 +4,7 @@
   "description": "A back-end API project to handle CRUD for Note keeping made using Hapi for the purpose of finishing \"Belajar Membuat Aplikasi Back-End untuk Pemula\" course.",
   "main": "index.js",
   "scripts": {
+    "prodStart": "NODE_ENV=production node ./src/server.js",
     "devStart": "nodemon ./src/server.js"
   },
   "keywords": [],
